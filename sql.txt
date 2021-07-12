@@ -1,0 +1,11 @@
+
+30038637, takuya hasama
+
+DROP DATABASE activityThree;
+CREATE DATABASE activityThree;
+USE activityThree;
+CREATE TABLE activityThrees (ID INTEGER NOT NULL AUTO_INCREMENT,Name VARCHAR(32), PRIMARY KEY(ID));
+INSERT INTO activityThrees (Name) VALUES ('Takuya'),('Shota'),('Hideo'),('Naoko'),('Kenji'),('Shohei'),('Koji'),('Ben'),('Nick'),('Tanaka');
+SELECT * FROM activityThrees;
+
+SELECT Name FROM activityThrees WHERE ID = ?;
